@@ -1,0 +1,19 @@
+
+CREATE DATABASE DataBaseJoshua;
+
+
+USE DataBaseJoshua;
+
+
+CREATE TABLE encuestas (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    nombre VARCHAR(255),
+    edad INT,
+    correo_electronico VARCHAR(255),
+    partido_politico VARCHAR(50)
+);
+
+CREATE TABLE partidos_politicos (
+    partido VARCHAR(50) PRIMARY KEY,
+    cantidad_personas INT DEFAULT 0
+);
